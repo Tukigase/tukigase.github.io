@@ -162,6 +162,18 @@ setInterval(()=>{
     else if(week == 7){
         document.querySelector('#aaa').textContent = "本日の運行はありません";
     }
+        else if(week == 6 && i == b6_h.length-1 || week < 6 && i == b_h.length-1){
+	document.querySelector('#aaa').textContent = "残り　" + r_h.toString().padStart(2,'0') + ":" + r_m.toString().padStart(2,'0') + ":" + r_s.toString().padStart(2,'0');
+	if(week == 6){
+            
+                document.querySelector('#next').textContent = b6_h[i].toString().padStart(2,'0') + ":" + b6_m[i].toString().padStart(2,'0') + "　発です。";
+        }
+        else {
+            
+                document.querySelector('#next').textContent = b_h[i].toString().padStart(2,'0') + ":" + b_m[i].toString().padStart(2,'0') + "　発です。";
+        }
+	document.querySelector('#nextnext').textContent = "ありません";
+    }
         //.toString().padStart(2,'0')はゼロ字詰め
     else{
         document.querySelector('#aaa').textContent = "残り　" + r_h.toString().padStart(2,'0') + ":" + r_m.toString().padStart(2,'0') + ":" + r_s.toString().padStart(2,'0');
