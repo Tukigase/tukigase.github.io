@@ -72,7 +72,7 @@
             
        
         <div class = "main">
-            残り　<a id="aaa" ></a>
+            <a id="aaa" ></a>
         </div>
         <br>
         <style>
@@ -155,27 +155,25 @@ setInterval(()=>{
     }
     //最終便後の判定
     if(week == 6 && i == b6_h.length || week < 6 && i == b_h.length){
-        document.querySelector('#aaa').textContent = "本日の運行は終了しました.";
+        document.querySelector('#aaa').textContent = "本日の運行は終了しました";
+        document.querySelector('#next').textContent = "ありません";
+        document.querySelector('#nextnext').textContent = "ありません";
     }
     else if(week == 7){
         document.querySelector('#aaa').textContent = "本日の運行はありません";
     }
         //.toString().padStart(2,'0')はゼロ字詰め
     else{
-        document.querySelector('#aaa').textContent = r_h.toString().padStart(2,'0') + ":" + r_m.toString().padStart(2,'0') + ":" + r_s.toString().padStart(2,'0');
+        document.querySelector('#aaa').textContent = "残り　" + r_h.toString().padStart(2,'0') + ":" + r_m.toString().padStart(2,'0') + ":" + r_s.toString().padStart(2,'0');
         if(week == 6){
             document.querySelector('#next').textContent = b6_h[i].toString().padStart(2,'0') + ":" + b6_m[i].toString().padStart(2,'0') + "　発です。";
             document.querySelector('#nextnext').textContent = b6_h[i+1].toString().padStart(2,'0') + ":" + b6_m[i+1].toString().padStart(2,'0') + "　発です。";
-            if(i == b6_h.length-1){
-                document.querySelector('#next').textContent = "ありません";
-            }
+           
         }
         else {
             document.querySelector('#next').textContent = b_h[i] + ":" + b_m[i] + "　発です。";
             document.querySelector('#nextnext').textContent = b_h[i+1] + ":" + b_m[i+1] + "　発です。";
-            if(i == b_h.length-1){
-                document.querySelector('#next').textContent = "ありません";
-            }
+           
         }
     }
 
