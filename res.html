@@ -68,7 +68,9 @@
             }, 100);
         </script>
 
-        次のバスが出発するまで<br><br>
+        次のバスは<a id="next"><br><br>
+            
+        出発するまで<br>
         <div class = "main">
             残り　<a id="aaa" ></a>
         </div>
@@ -87,7 +89,7 @@
             
         </style>
         
-        その次のバスは　<a id="next">　です。<br>
+        その次のバスは　<a id="nextnext"><br>
         </div>
 
 
@@ -161,13 +163,15 @@ setInterval(()=>{
     else{
         document.querySelector('#aaa').textContent = r_h + ":" + r_m + ":" + r_s;
         if(week == 6){
-            document.querySelector('#next').textContent = b6_h[i+1] + ":" + b6_m[i+1] + "　発です";
+            document.querySelector('#next').textContent = b6_h[i] + ":" + b6_m[i] + "　発です。";
+            document.querySelector('#nextnext').textContent = b6_h[i+1] + ":" + b6_m[i+1] + "　発です。";
             if(i == b6_h.length-1){
                 document.querySelector('#next').textContent = "ありません";
             }
         }
         else {
-            document.querySelector('#next').textContent = b_h[i+1] + ":" + b_m[i+1] + "　発です";
+            document.querySelector('#next').textContent = b_h[i] + ":" + b_m[i] + "　発です。";
+            document.querySelector('#nextnext').textContent = b_h[i+1] + ":" + b_m[i+1] + "　発です。";
             if(i == b_h.length-1){
                 document.querySelector('#next').textContent = "ありません";
             }
