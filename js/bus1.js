@@ -131,11 +131,11 @@ setInterval(()=>{
         document.querySelector('#aaa').textContent = "残り　" + r_h.toString().padStart(2,'0') + ":" + r_m.toString().padStart(2,'0') + ":" + r_s.toString().padStart(2,'0');
         if(week == 6){
                 document.querySelector('#next').textContent = b6_h[i].toString().padStart(2,'0') + ":" + b6_m[i].toString().padStart(2,'0') + "　発です。";
-                document.querySelector('#nextnext').textContent = b6_h[i+1].toString().padStart(2,'0') + ":" + b6_m[i+1].toString().padStart(2,'0') + "　発です。";   
+                document.querySelector('#nextnext').textContent = b6_h[i+1].toString().padStart(2,'0') + ":" + b6_m[i+1].toString().padStart(2,'0') + "発です。";   
         }
         else {
                 document.querySelector('#next').textContent = b_h[i].toString().padStart(2,'0') + ":" + b_m[i].toString().padStart(2,'0') + "　発です。";
-                document.querySelector('#nextnext').textContent = b_h[i+1].toString().padStart(2,'0') + ":" + b_m[i+1].toString().padStart(2,'0') + "　発です。";           
+                document.querySelector('#nextnext').textContent = b_h[i+1].toString().padStart(2,'0') + ":" + b_m[i+1].toString().padStart(2,'0') + "発です。";           
         }
     }
 
