@@ -24,7 +24,8 @@ window.onload = function(){
                 break;
             }
         }
-     }else
+     }
+    else
      {
          for(i = 0;i < b_h.length -1 ;i++){
     
