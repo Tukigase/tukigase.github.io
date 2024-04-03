@@ -37,7 +37,7 @@ window.onload = function(){
            r_h = Math.floor(r_sum / 3600);
            r_m = Math.floor((r_sum % 3600) / 60);
            r_s = ((r_sum % 3600) % 60);
-
+            
            //次のバス時刻への変更
            if(r_h >= 0 && r_m >= 0 && r_s > 0){
                break;
