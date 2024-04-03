@@ -6,3 +6,27 @@ body{
     font-size: 60;
     text-align: center
 }
+
+
+.box1{
+    background-color: rgb(159, 255, 228);
+    
+    width: 140;
+}
+
+
+.fixed_btn{
+    position: fixed;
+    bottom: 10; /*追従ボタンのウィンドウ端の余白*/
+    left: 10px;/*追従ボタンの横の位置*/
+    font-size: 8;
+    z-index: 1;
+}
+.fixed_btn2{
+    background-color: rgb(170, 215, 255);
+    position: fixed;
+    bottom: 10; /*追従ボタンのウィンドウ端の余白*/
+    right: 10px;/*追従ボタンの横の位置*/
+    font-size: 8;
+    z-index: 1;
+}
