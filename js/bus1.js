@@ -5,6 +5,7 @@ window.onload = function(){
      var s = now.getSeconds();
      var week = now.getDay();
      var sum = h * 3600 + m * 60 + s;
+//以下のifはサイトを開いたときの最初のダイヤを探している
     if(week == 6){
         for(i = 0;i < b6_h.length -1 ;i++){
             
