@@ -36,7 +36,7 @@ window.onload = function(){
         up_r_m = tmp[1];
         up_r_s = tmp[2];
     }
-    down_count_load();
+
 };
 
 
