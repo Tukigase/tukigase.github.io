@@ -87,7 +87,7 @@ setInterval(()=>{
     }
 
     //最終便後の判定
-    if(week == 6 && i == up_bus_sat[0][i].length || week < 6 && i == up_bus_all[0][i].length){
+    if(week == 6 && i == up_bus_sat[0].length || week < 6 && i == up_bus_all[0].length){
         up_aaa = "本日の運行は終了しました";
         up_next = "ありません";
         up_nextnext = "ありません";
@@ -97,7 +97,7 @@ setInterval(()=>{
 	    up_next = "ありません";
         up_nextnext = "ありません";
     }
-    else if(week == 6 && i == up_bus_sat[0][i].length-1 || week < 6 && i == up_bus_all[0][i].length-1){
+    else if(week == 6 && i == up_bus_sat[0].length-1 || week < 6 && i == up_bus_all[0].length-1){
 	    up_aaa = "残り　" + up_r_h + ":" + up_r_m + ":" + up_r_s;
 	    if(week == 6){
             up_next = up_bus_sat[0][i] + ":" + up_bus_sat[1][i].toString().padStart(2,'0') + "　発です。";
