@@ -1,0 +1,43 @@
+.calendar{
+    font-size: 2em;
+    padding-top: 1em;
+}
+.calendar p{
+    padding-bottom: 1em;
+}
+
+ul{
+    font-size: 30px;
+}
+
+
+.flex {
+    display: flex; /*横並び*/
+  }
+  .flex .image {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+  }
+  .flex .text {
+    margin: 0 0 0 20px;
+    padding: 0;
+  }
+
+
+#element {
+    position: relative;
+    left: 0;
+
+    margin-bottom: -1em;
+}
+#image-container {
+    visibility: hidden;
+    margin-top: -4em;
+    position: relative;
+    left: 0;
+}
+#image-container img{
+    margin-left: 100px;
+}

@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bus countdown</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/tab.css">
+    <link rel="stylesheet" href="stylesheet/bus-main.css">
+    <!--<script src="js/up_bus.js"></script>-->
+    
+</head>
+<body>
+
+    <div class="tab">
+        <ul class="tab__menu">
+          <li class="tab__menu-item is-active" data-tab="01">大学⇒住道</li>
+          <li class="tab__menu-item" data-tab="02">住道⇒大学</li>
+          <li class="tab__menu-item" data-tab="03">その他</li>
+        </ul>
+        <div class="tab__panel" id="tab__panel">
+            <div class="tab__panel-box tab__panel-box001 is-show" data-panel="01">
+                <div class="bus_count_area">
+                    現在 <b><a id="up_now" ></a></b> です。<br>※夏休みダイヤには対応しておりません。<br>
+                    次のバスは　<a id="up_next"></a><br>
+                    <a id="up_countdown" ></a><br>
+                </div>
+                <div id="image-container">
+                    <img src="letgo.png" height="50px">
+                </div>
+                <img src="bus1.png" id="element" width="200px"><br>
+        
+                <div class="bus_count_area">
+                    その次のバスは<a id="up_nextnext"><br>
+                </div>
+            </div>
+            <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                <div class="bus_count_area">
+                    現在 <b><a id="down_now" ></a></b> です。<br>※夏休みダイヤには対応しておりません。<br>
+                    次のバスは　<a id="down_next"></a><br>
+                    <a id="down_countdown" ></a><br>
+                </div>
+                <div id="image-container">
+                    <img src="letgo.png" height="50px">
+                </div>
+                <img src="bus1.png" id="element" width="200px"><br>
+                <div class="bus_count_area">
+                    その次のバスは<a id="down_nextnext"><br>
+                </div>
+            </div>
+            <div class="tab__panel-box tab__panel-box003" data-panel="03">
+                <div class="calendar">
+                    大学Webサイト　シャトルバス関連ページ<br>
+                    <a href="https://www.osaka-sandai.ac.jp/campusmap/bus.html">https://www.osaka-sandai.ac.jp/campusmap/bus.html</a><br>
+                    <hr>
+                    <h3>注意事項</h3>
+                    <p>
+                        当サイトについては、2024年度現在、大学に所属している学生が<br>
+                        個人で運営しているものであって大阪産業大学公式のものではありませんのでご注意ください<br>
+                    </p>
+                    <hr>
+                    <h3>連絡など</h3>
+                    <div class="flex">
+                        <figure class="image"><img src="問い合わせQR.png" width="200px"></figure>
+                        <p class = "text">
+                            時間がずれているなど、サイトの不具合など、何かあれば、下記リンクから<br>
+                            フォームにてお問い合わせください。時間を見て、対応いたします。<br>
+                            ※反応、対応に時間がかかる場合がございます。<br>
+                            <a href="https://forms.gle/68pJfGMvtmCTpJq8A">https://forms.gle/68pJfGMvtmCTpJq8A</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/tab.js"></script>
+    <script src="js/bus_all.js"></script>
+    <!--<script src="js/down_bus.js"></script>-->
+    <script src="js/time_convert.js"></script>
+    
+
+
+</body>
+</html>
