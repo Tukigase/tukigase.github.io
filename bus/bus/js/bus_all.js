@@ -61,6 +61,7 @@ window.onload = function(){
         down_r_m = tmp[1];
         down_r_s = tmp[2];
     }
+    alert("2025/05/08 23:26 時刻表を反映しました。");
 };
 
 
